@@ -1,6 +1,6 @@
-import Header from './Header'
-import MainContent from './MainContent'
-import Footer from './Footer'
+import Header from './components/Header'
+import MainContent from './components/MainContent'
+import Footer from './components/Footer'
 import WelcomeMessage from './components/WelcomeMessage'
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
@@ -17,12 +17,7 @@ function App() {
         <Header />
         <MainContent />
         <Footer />
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        
       </div>
       <h1>Vite + React</h1>
       <div className="card">

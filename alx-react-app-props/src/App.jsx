@@ -8,10 +8,10 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Counter from './components/Counter'
-import ProfilePage from '../ProfilePage'
-import UserContext from '../UserContext'
+import ProfilePage from './components/ProfilePage'
+import UserContext from './components/UserContext'
 import React from 'react'
-import UserInfo from '../UserInfo'
+import UserInfo from './components/UserInfo'
 function App() {
   // Example user data
   const userData = {

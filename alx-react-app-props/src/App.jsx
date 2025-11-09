@@ -8,22 +8,24 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Counter from './components/Counter'
-
+import ProfilePage from '../ProfilePage'
+import UserContext from '../UserContext'
+import React from 'react'
+import UserInfo from '../UserInfo'
 function App() {
-  const [count, setCount] = useState(0)
+  // Example user data
+  const userData = {
+    name: 'Derick Asare',
+    email: 'derick@example.com',
+    role: 'Software Engineer'
+  };
 
   return (
-    <>
-      <div>
-        <WelcomeMessage />
-        <Header />
-        <MainContent />
-        <Footer />
-        <UserProfile name="Alice" age="25" bio="Loves hiking and photography"/>
-      </div>
-        <Counter />
-    </>
-  )
+    <UserContext.Provider value={userData}>
+      <ProfilePage />
+    </UserContext.Provider>
+  );
 }
+
 
 export default App
